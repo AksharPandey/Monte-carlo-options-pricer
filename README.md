@@ -1,31 +1,16 @@
 # Monte Carlo Option Pricer
 
-A Python implementation of Monte Carlo simulation for pricing European put 
-and call options, built after studying how stochastic price path simulation 
-works conceptually.
+A Python project built while learning about options pricing and Monte Carlo 
+simulation. Implements GBM-based price path simulation to price European 
+put and call options.
 
-## What it does
-
-Prices a European option by simulating thousands of possible future stock 
-price paths and averaging the discounted payoff across all of them.
-
-The core idea: instead of solving for the option price analytically, we 
-simulate the randomness of the market directly. Each path represents one 
-possible future for the stock price, evolving according to Geometric 
-Brownian Motion — the standard model for stock price dynamics, which 
-captures both the expected drift of the stock and its random volatility.
-
-At expiry, we calculate what the option would pay off on each path, then 
-discount the average back to today using the risk-free rate. With enough 
-simulations, this converges to the true option price.
+Built as a starting point — plan to rebuild and extend this properly after 
+studying probability and stochastic processes formally.
 
 ## Features
-
-- Simulates GBM price paths using numpy vectorisation
-- Prices both European put and call options
-- Visualises the first 50 simulated price paths
-- User-defined inputs: stock price, strike, expiry, rate, volatility, 
-  steps, simulations
+- Simulates stock price paths using Geometric Brownian Motion
+- Prices European put and call options
+- Visualises simulated price paths
 
 ## Example output
 
