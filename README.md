@@ -22,10 +22,3 @@ studying probability and stochastic processes formally.
 
 numpy, matplotlib
 
-## What I want to add next
-
-- Black-Scholes analytical price as benchmark for MC convergence
-- Confidence intervals on the MC estimate
-- Variance reduction via antithetic variates
-- Greeks computation via finite difference
-
